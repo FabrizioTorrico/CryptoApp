@@ -1,21 +1,19 @@
 import React from "react";
-import { Flex, Spacer, Text } from "@chakra-ui/react";
+import { Grid, Text } from "@chakra-ui/react";
 
 const ListTitles = () => {
   return (
-    <Flex align="center" width="90%">
-      <Text ml="4">symbol</Text>
-      <Spacer />
-      <Text>Name</Text>
-      <Spacer />
+    <Grid
+      templateColumns={["repeat(4, 1fr) ", "repeat(4, 1fr) ", "repeat(6, 1fr)"]}
+      gap={4}
+    >
+      <Text>symbol</Text>
+      <Text display={["none", "none", "grid"]}>Name</Text>
       <Text>Price</Text>
-      <Spacer />
-      <Text>Market Cap</Text>
-      <Spacer />
+      <Text display={["none", "none", "grid"]}>Market Cap</Text>
       <Text>24h %</Text>
-      <Spacer />
       <div>Filter</div>
-    </Flex>
+    </Grid>
   );
 };
 

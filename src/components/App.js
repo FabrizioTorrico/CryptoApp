@@ -10,7 +10,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Header />
-      <Container maxW="3xl">
+      <Container maxW="5xl">
         <Routes>
           <Route path="/" element={<CryptoList />} />
           <Route path="/cryptos/:id" element={<CryptoInfo />} />

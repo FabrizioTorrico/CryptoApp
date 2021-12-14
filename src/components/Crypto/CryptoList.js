@@ -37,7 +37,7 @@ class CryptoList extends React.Component {
   renderSeeker() {
     return (
       <Stack direction="row" textAlign={"center"}>
-        <InputGroup>
+        <InputGroup size="lg">
           <InputLeftElement
             pointerEvents="none"
             children={<Search2Icon color="gray.500" />}
@@ -52,6 +52,7 @@ class CryptoList extends React.Component {
         </InputGroup>
         <Center>
           <IconButton
+            size="lg"
             aria-label="Refresh cryptos"
             icon={
               this.state.refreshing === false ? <RepeatIcon /> : <Spinner />
@@ -87,7 +88,7 @@ class CryptoList extends React.Component {
       >
         <Heading
           fontWeight={600}
-          fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
+          fontSize={{ base: "2xl", sm: "4xl", md: "7xl" }}
           lineHeight={"100%"}
           mb={{ md: 14 }}
         >

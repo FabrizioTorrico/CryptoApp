@@ -14,7 +14,7 @@ const StatCard = ({ type = "default", label, number, text }) => {
   if (type === "primary") {
     const bg = number > 0 ? "green.400" : "red.400";
     return (
-      <Stat bg={bg} p="2" size="small" borderRadius={"10px"} color="white">
+      <Stat bg={bg} p="2" size="sm" borderRadius={"10px"} color="white">
         <StatLabel>{label}</StatLabel>
         <StatNumber>
           <StatArrow
@@ -29,7 +29,7 @@ const StatCard = ({ type = "default", label, number, text }) => {
   }
 
   return (
-    <Stat bg={bg} p="2" size="small" borderRadius={"10px"}>
+    <Stat bg={bg} p="2" size="md" borderRadius={"10px"}>
       <StatLabel>{label}</StatLabel>
       <StatNumber>{number}</StatNumber>
       <StatHelpText>{text}</StatHelpText>
