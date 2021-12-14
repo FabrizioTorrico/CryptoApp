@@ -45,7 +45,13 @@ const CryptoInfo = () => {
           </Text>
           <Text>{coinData.symbol.toUpperCase()}</Text>
         </Box>
-        <Center w="40px" h="40px" bg={bg} borderRadius={"50%"}>
+        <Center
+          w="40px"
+          h="40px"
+          bg={bg}
+          borderRadius={"50%"}
+          display={{ base: "none", sm: "flex" }}
+        >
           <Text fontWeight="bold" fontSize="lg">
             #{coinData.market_cap_rank}
           </Text>
@@ -93,7 +99,7 @@ const CryptoInfo = () => {
           label="developer score"
           number={coinData.developer_score.toFixed(2)}
         ></StatCard>
-        <GridItem rowSpan={4} colSpan={2}>
+        <GridItem rowSpan={2} colSpan={2}>
           <Box bg={bg} p="6" borderRadius={"10px"}>
             <Text mb="4" noOfLines={3}>
               {coinData.description["en"]
