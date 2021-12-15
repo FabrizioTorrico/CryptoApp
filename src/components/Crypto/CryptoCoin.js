@@ -31,7 +31,7 @@ const CryptoCoin = ({ symbol, name, image, market_data, id }) => {
 
       <Text display={["none", "none", "grid"]}>{name}</Text>
 
-      <Text>${current_price["usd"]}</Text>
+      <Text>${current_price["usd"].toFixed(2)}</Text>
 
       <Text display={["none", "none", "grid"]}>
         {market_cap["usd"].toLocaleString()}

@@ -7,12 +7,12 @@ const ListTitles = () => {
       templateColumns={["repeat(4, 1fr) ", "repeat(4, 1fr) ", "repeat(6, 1fr)"]}
       gap={4}
     >
-      <Text>symbol</Text>
+      <Text>Symbol</Text>
       <Text display={["none", "none", "grid"]}>Name</Text>
       <Text>Price</Text>
       <Text display={["none", "none", "grid"]}>Market Cap</Text>
       <Text>24h %</Text>
-      <div>Filter</div>
+      {/* <div>Filter</div> */}
     </Grid>
   );
 };

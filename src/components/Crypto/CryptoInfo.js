@@ -77,7 +77,10 @@ const CryptoInfo = () => {
     return (
       <Grid
         templateRows="repeat(auto-fit, minmax(100px, 1fr))"
-        templateColumns="repeat(auto-fit, minmax(200px, 1fr))"
+        templateColumns={[
+          "repeat(auto-fit, minmax(150px, 1fr))",
+          "repeat(auto-fit, minmax(200px, 1fr))",
+        ]}
         gap={4}
         mb="14"
       >

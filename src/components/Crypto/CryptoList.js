@@ -25,8 +25,9 @@ class CryptoList extends React.Component {
   refresh = async () => {
     this.setState({ refreshing: true });
     console.log("refreshing");
-    const cryptoList = await getCryptoListData();
-    this.setState({ cryptoList });
+    const newCryptoList = await getCryptoListData();
+    this.setState({ cryptoList: newCryptoList });
+    console.log(newCryptoList);
     this.setState({ refreshing: false });
   };
 

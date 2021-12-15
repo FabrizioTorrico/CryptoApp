@@ -29,7 +29,7 @@ const StatCard = ({ type = "default", label, number, text }) => {
   }
 
   return (
-    <Stat bg={bg} p="2" size="md" borderRadius={"10px"}>
+    <Stat bg={bg} p="2" size={["sm", "md"]} borderRadius={"10px"}>
       <StatLabel>{label}</StatLabel>
       <StatNumber>{number}</StatNumber>
       <StatHelpText>{text}</StatHelpText>
