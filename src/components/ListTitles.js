@@ -12,7 +12,6 @@ const ListTitles = () => {
       <Text>Price</Text>
       <Text display={["none", "none", "grid"]}>Market Cap</Text>
       <Text>24h %</Text>
-      {/* <div>Filter</div> */}
     </Grid>
   );
 };
